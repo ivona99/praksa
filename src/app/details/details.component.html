@@ -30,12 +30,12 @@
 
   <div>
     <h3>All of the events should show below</h3>
-  
+
     <table>
       <thead>
         <tr>
           <th>Event</th>
-          <th>Date</th>      
+          <th>Date</th>
           <th>Time</th>
           <th>Address</th>
         </tr>
@@ -43,13 +43,13 @@
       <tbody>
         <tr *ngFor="let event of events">
           <td> {{event.name}} </td>
-          <td> {{event.date}} </td>      
+          <td> {{event.date}} </td>
           <td> {{event.time}} </td>
           <td> {{event.location | json}} </td>
         </tr>
       </tbody>
     </table>
-  
+
   </div>
 
   <div>
@@ -66,7 +66,7 @@
         Online URL: {{event?.onlineUrl}}
       </div>
     </div>
-  
+
   </div>
 
   <div>
@@ -87,9 +87,9 @@
         Online URL: {{event?.onlineUrl}}
       </div>
     </div>
-  
+
   </div>
-  
+
 
   <div>
     <div class="legend">
@@ -107,17 +107,17 @@
         Online URL: {{event?.onlineUrl}}
       </div>
     </div>
-  
+
   </div>
 
   <div>
     <h3>All of the events should show below</h3>
-  
+
     <table>
       <thead>
         <tr>
           <th>Event</th>
-          <th>Date</th>      
+          <th>Date</th>
           <th>Time</th>
           <th>Address</th>
         </tr>
@@ -125,11 +125,13 @@
       <tbody>
         <tr *ngFor="let event of events">
           <td>{{event.name}}</td>
-          <td>{{event.date}} </td>      
+          <td>{{event.date}} </td>
           <td>{{event.time}}</td>
           <td>{{event.location.address}}, {{event.location.city}}, {{event.location.country}}</td>
         </tr>
       </tbody>
     </table>
-  
+
   </div>
+  <app-home></app-home>
+

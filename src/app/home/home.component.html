@@ -1,0 +1,29 @@
+<!-- <collapsible-well>
+  This is some content that can be hidden
+</collapsible-well> -->
+
+<multi-slot>
+  <div style="border: red, solid, 1px;" slot1>
+    This content goes in slot 1
+  </div>
+  <div slot2>
+    This content goes in slot 2
+  </div>
+  <div slot3>
+    This content goes in slot 3
+  </div>
+</multi-slot>
+
+<span>{{myText | lowercase}}</span><br>
+
+<span>{{theDate | date:'medium'}} - should be "April 1, 2035"<br></span>
+
+<span>{{theDate | date:'MM-dd-yyyy'}} - should be "04-01-2035"<br></span>
+
+<span>{{theDate | date: 'h:mm a'}} - should be "2:15 PM"<br></span>
+
+<span>{{theDate | date:'MMM d, H:mm'}} - should be "April 1, 14:15"<br></span>
+
+<h1>{{myTxt | titlecase}}</h1>
+
+
